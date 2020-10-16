@@ -13,8 +13,12 @@ int main(int argc, char* argv[]) {
 	}
 
 	int input = atoi(argv[1]);
+	if(input<0){
+		printf("invalid input!!\n\n");
+		exit(-1);
+	}
 	printf("Sqrt of %d is %f\n",input,sqrt(input));
-	printf("End of program. Exiting..");
+	printf("End of program. Exiting..\n\n");
 	return(0);
 
 } // end main
